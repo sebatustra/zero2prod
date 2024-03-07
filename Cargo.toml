@@ -16,9 +16,11 @@ name = "zero2prod"
 actix-web = "4"
 chrono = { version = "0.4.34", default-features = false, features = ["clock"] }
 config = "0.14.0"
+env_logger = "0.11.3"
 serde = { versions = "1.0.197", features = ["derive"]}
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 uuid = { version = "1.7.0", features = ["v4"] }
+log = "0.4"
 
 [dev-dependencies]
 reqwest = "0.11.24"
