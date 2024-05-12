@@ -34,7 +34,6 @@ mod tests {
             let email = SafeEmail().fake_with_rng(g);
             Self(email)
         }
-
     }
 
     #[quickcheck_macros::quickcheck]
@@ -59,5 +58,4 @@ mod tests {
         let email = "@domain.com".to_string();
         assert_err!(SubscriberEmail::parse(email));
     }
-
 }
